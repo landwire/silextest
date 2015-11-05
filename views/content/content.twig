@@ -1,16 +1,18 @@
-CONTENT!!!
-Question: How do I get my form in here?
 <h1>My Todo List</h1>
 <div class="todo__controls">
-	<button class="todo__add btn btn-default" type="submit">Add Todo</button>
+	<button class="todo__add btn btn-default" type="submit">
+		<span class="glyphicon glyphicon-star" aria-hidden="true"></span> New Todo Item
+	</button>
 </div>
+{% block form %}
 <div class="todo__form">
 	{% include 'components/form.twig' %}
 </div>
-<div id="todolist" class="list-group">
+{% endblock %}
+<ul id="todolist" class="list-group">
     {% for item in todos %}
-        <button class="todo_{{ item.id }} todo__item list-group-item" data-id="{{ item.id }}">
-        	<div class="item_container list-group-item-heading">
+        <li class="todo_{{ item.id }} todo__item list-group-item" data-id="{{ item.id }}">
+        	<h5 class="item_container list-group-item-heading">
 	        	<span class="todo__title ">{{ item.title }}</span>
 	        	<span class="item__controls pull-right">
 		        	<input class="control__item done" type="checkbox" name="todo_{{ item.id }}" 
@@ -18,10 +20,12 @@ Question: How do I get my form in here?
 		        			checked="checked"
 		        		{% endif %}
 		        	>
-		        	<span class="control__item delete">(x)</span>
+		        	<span class="control__item sort glyphicon glyphicon-move" aria-hidden="true"></span>
+		        	<span class="control__item delete glyphicon glyphicon-trash" aria-hidden="true"></span>
+		        	<a href="todo/edit/{{ item.id }}"><span class="control__item edit glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
 		        </span>
-		    </div>
+		    </h5>
         	<div class="todo__body list-group-item-text">{{ item.body }}</div>
-        </button>
+        </li>
     {% endfor %}
-</div>
+</ul>

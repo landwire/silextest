@@ -19,6 +19,7 @@ $app['debug'] = true;
 
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Silex\Provider\FormServiceProvider;
 use Symfony\Component\Validator\Constraints as Assert;
 $app->register(new FormServiceProvider());

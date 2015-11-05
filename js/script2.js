@@ -13,7 +13,7 @@ console.log('Sascha');
     		console.log('AJAX CALL!!!');
     		$.ajax({
 			  	method: "POST",
-			  	url: "todo/delete",
+			  	url: "../../todo/delete",
 			  	data: { id: itemId },
 			  	success: function(data) {
 			        console.log(data);
@@ -36,7 +36,7 @@ console.log('Sascha');
     		checked = $this.prop('checked');
     		$.ajax({
 			  	method: "POST",
-			  	url: "todo/done",
+			  	url: "../../todo/done",
 			  	data: { id: itemId, done: checked },
 			  	success: function(data) {
 			        console.log(data);
@@ -100,7 +100,7 @@ console.log('Sascha');
                 console.log(ids);
                 $.ajax({
                     method: "POST",
-                    url: "todo/sort",
+                    url: "../../todo/sort",
                     data: { order: ids },
                     success: function(data) {
                         console.log(data);

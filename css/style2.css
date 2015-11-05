@@ -8,7 +8,7 @@ body {
 .control__item {
 	margin: 0 5px;
 }
-.todo__body, .todo__form {
+.todo__body {
 	display: none;
 }
 .list-group-item:hover {

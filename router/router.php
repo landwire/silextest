@@ -9,7 +9,11 @@ use Symfony\Component\Validator\Constraints as Assert;
 // Todo List & Form
 $app->get('/twig', function () use ($app) {
 	$todos = json_decode(file_get_contents('data/todos.json'), true);
-    $form = sas_loadForm('Todo', $app);
+    $data = array(
+                'Title' => 'Your next Todo',
+                'Body' => 'I have to get some bananas for the monkeys...',
+            );
+    $form = sas_loadForm('Todo', $data, $app);
     
     // from must be created after submission handlers and validation!!!!
     if ($form) {
@@ -22,10 +26,10 @@ $app->get('/twig', function () use ($app) {
     ));
 });
 
-// Adding another Todo
+// Processing the form
 $app->post('/twig', function (Request $request) use ($app) {
     $todos = json_decode(file_get_contents('data/todos.json'), true);
-    $form = sas_loadForm('Todo', $app);
+    $form = sas_loadForm('Todo', $data, $app);
     //var_dump($form) . '<br>';
     
     $form->handleRequest($request);
@@ -48,7 +52,7 @@ $app->post('/twig', function (Request $request) use ($app) {
         				'id'	=> $new_id,
         				'title' => $data['Title'],
         				'body' 	=> $data['Body'],
-        				'done' 	=> false 
+        				'done' 	=> false,
         			);
         
         // save todos in a file
@@ -77,7 +81,7 @@ $app->post('/todo/delete', function (Request $request) use ($app) {
 		if ($todo['id'] === $id) {
 			$todos = removeElementWithValue($todos, 'id', $id);
 			file_put_contents("data/todos.json",json_encode($todos));
-			return 'success';
+			return new Response('Todo deleted.', 201);
 		}
 	}
 	return 'error';
@@ -93,12 +97,113 @@ $app->post('/todo/done', function (Request $request) use ($app) {
 		if ($todo['id'] === $id) {
 			$todo['done'] = $done;
 			file_put_contents("data/todos.json",json_encode($todos));
-			return 'success';
+			return new Response('Todo is done. One task less on the list!', 201);
 		}
 	}
 	return 'error';
-});		
+});
 
+// sorting the todos
+// deleting a Todo
+$app->post('/todo/sort', function (Request $request) use ($app) {
+    $todos = json_decode(file_get_contents('data/todos.json'), true);
+    $order = $request->request->get('order');
+    $newtodos = array();
+    var_dump($order);
+    // sort $todos according to $order
+    foreach ($order as $id) {
+        foreach ($todos as $todo) {
+            if ($todo['id'] == $id) {
+                $newtodos[] = $todo;
+                break;
+            }
+        }
+    }
+    var_dump($newtodos);
+    file_put_contents("data/todos.json",json_encode($newtodos));
+    return new Response('Todo resorted.', 201);
+});
+
+// Edit an item
+$app->get('/todo/edit/{id}', function ($id) use ($app) {
+    $todos = json_decode(file_get_contents('data/todos.json'), true);
+    foreach ($todos as $todo) {
+        if ($todo['id'] == $id) {
+            $data = array(
+                'Title' => $todo['title'],
+                'Body' => $todo['body'],
+            );
+            break;
+        }
+    }
+    $form = sas_loadForm('Edit', $data, $app);
+
+    // from must be created after submission handlers and validation!!!!
+    if ($form) {
+        $form = $form->createView();
+    }
+
+    return $app['twig']->render('index2.twig', array(
+            'form' => $form,
+            'todos'=> $todos
+    ));
+});
+
+// Processing the form
+$app->post('/todo/edit/{id}', function (Request $request, $id) use ($app) {
+    // WHY CAN I NOT GET THE $id  by passing it in???????
+    // Always returns NULL or something else....
+    //var_dump($id);
+    $referer = $_SERVER["HTTP_REFERER"];
+    $pos = strrpos($referer, '/');
+    $id = $pos === false ? $$referer : substr($referer, $pos + 1);
+    $id = intval($id);
+    //var_dump($id);
+    $todos = json_decode(file_get_contents('data/todos.json'), true);
+    foreach ($todos as $todo) {
+        if ($todo['id'] === $id) {
+            $data = array(
+                'Title' => $todo['title'],
+                'Body' => $todo['body'],
+            );
+            break;
+        }
+    }
+    $form = sas_loadForm('Edit', $data, $app);
+    //var_dump($form) . '<br>';
+    
+    $form->handleRequest($request);
+
+    if ($form->isValid()) {
+        $data = $form->getData();
+        //var_dump($data);
+        foreach ($todos as &$todo) {
+            if ($todo['id'] == $id) {
+                $todo = array(
+                            'id'    => $todo['id'],
+                            'title' => $data['Title'],
+                            'body'  => $data['Body'],
+                            'done'  => $todo['done'],
+                        );
+            }
+        }
+        
+        // save todos in a file
+        file_put_contents("data/todos.json",json_encode($todos));
+        // redirect somewhere
+        return $app->redirect('../../twig');
+    }
+   
+    // form must be created after submission handlers and validation!!!!
+    if ($form) {
+        $form = $form->createView();
+    }
+
+    return $app['twig']->render('index.twig', array(
+            'form' => $form,
+            'todos'=> $todos
+    ));
+});
 
 
 

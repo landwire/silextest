@@ -3,7 +3,16 @@ Question: How do I get my form in here?
 <h1>My Todo List</h1>
 <ul id="todolist">
     {% for item in todos %}
-        <li>{{ item.title }}</li>
+        <li class="todo_{{ item.id }}">
+        	<span class="title">{{ item.title }}</span>
+        	<input type="checkbox" name="todo_{{ item.id }}" 
+        		{% if item.done %}
+        			checked
+        		{% endif %}
+        	>
+        	<span class="delete">(x)</span>
+        	<div class="body">{{ item.body }}</div>
+        </li>
     {% endfor %}
 </ul>
 {% include 'components/form.twig' %}

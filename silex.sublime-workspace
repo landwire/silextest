@@ -1,0 +1,847 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"t",
+				"tbody	Tag"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
+				"font",
+				"font-orange"
+			],
+			[
+				"backgr",
+				"background-color: "
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"pos",
+				"position: "
+			],
+			[
+				"trget",
+				"targetUlHeight"
+			],
+			[
+				"target",
+				"targetUlHeight"
+			],
+			[
+				"fon",
+				"font-orange"
+			],
+			[
+				"max",
+				"maxHeight2"
+			],
+			[
+				"fonr",
+				"font-orange"
+			],
+			[
+				"hCardC",
+				"hCardContent"
+			],
+			[
+				"font-",
+				"font-orange"
+			],
+			[
+				"ext",
+				"extern_link"
+			],
+			[
+				"linkL",
+				"linkList__item"
+			],
+			[
+				"margin",
+				"margin-bottom: "
+			],
+			[
+				"fil",
+				"file_extension"
+			],
+			[
+				"file_",
+				"file_extension"
+			],
+			[
+				"file",
+				"file_extension"
+			],
+			[
+				"sub-fact",
+				"sub-fact-text"
+			],
+			[
+				"goo",
+				"googleMapsHeight"
+			],
+			[
+				"first",
+				"first-child"
+			],
+			[
+				"descr",
+				"descriptionPart"
+			],
+			[
+				"w",
+				"break-word"
+			],
+			[
+				"descript",
+				"descriptionHeight"
+			],
+			[
+				"label",
+				"labelHeight"
+			],
+			[
+				"input",
+				"inputLabel"
+			],
+			[
+				"form",
+				"form-item"
+			],
+			[
+				"hCard",
+				"hCardContentHeight"
+			],
+			[
+				"hCar",
+				"hCardReadMoreHeight"
+			],
+			[
+				"potential",
+				"potentialHeight"
+			],
+			[
+				"new",
+				"newHeight"
+			],
+			[
+				"text",
+				"text-decoration: "
+			],
+			[
+				"orange",
+				"font-orange"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"heightFac",
+				"textHeightFactor"
+			],
+			[
+				"height",
+				"heightFactor"
+			],
+			[
+				"potenti",
+				"potentialHeight"
+			],
+			[
+				"hCardBody",
+				"hCardBodyPadding"
+			],
+			[
+				"post",
+				"post_type"
+			],
+			[
+				"quer",
+				"query_details"
+			],
+			[
+				"query",
+				"query_args"
+			],
+			[
+				"term",
+				"term_slug"
+			],
+			[
+				"padding",
+				"padding-top: "
+			],
+			[
+				"project",
+				"project_type"
+			],
+			[
+				"auth",
+				"author_location"
+			],
+			[
+				"selec",
+				"selectValue"
+			],
+			[
+				"fieldVa",
+				"fieldValueRaw"
+			],
+			[
+				"default",
+				"defaultSelected"
+			],
+			[
+				"field",
+				"fieldValue"
+			],
+			[
+				"tax",
+				"taxonomy_name"
+			],
+			[
+				"html",
+				"html_target"
+			],
+			[
+				"fie",
+				"fieldValue"
+			],
+			[
+				"budget",
+				"budget_amount"
+			],
+			[
+				"m2",
+				"mysql2date"
+			],
+			[
+				"area",
+				"area_amount"
+			],
+			[
+				"defa",
+				"defaultItem"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"edit",
+				"edit_button"
+			],
+			[
+				"fe",
+				"featured_image_id"
+			],
+			[
+				"feat",
+				"featured_class"
+			],
+			[
+				"get_post_ty",
+				"get_post_types"
+			],
+			[
+				"get_post",
+				"get_post_format_link"
+			],
+			[
+				"edi",
+				"edit_button"
+			],
+			[
+				"read",
+				"readable"
+			],
+			[
+				"rea",
+				"readable"
+			],
+			[
+				"em",
+				"empty_class"
+			],
+			[
+				"get_object",
+				"get_objects_in_term"
+			],
+			[
+				"get_post_custom",
+				"get_post_custom_values"
+			],
+			[
+				"get_po",
+				"get_post_custom"
+			],
+			[
+				"ucri",
+				"ucfirst"
+			],
+			[
+				"heade",
+				"header_items"
+			],
+			[
+				"coun",
+				"country_out"
+			],
+			[
+				"content",
+				"contentType"
+			],
+			[
+				"conten",
+				"contentType"
+			],
+			[
+				"ed",
+				"edit_button"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 1510,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/Websites/silex/test1/index.php",
+		"/Volumes/Websites/typo3-6.2/htdocs/fileadmin/templates/main_1_column_with_menu.html",
+		"/Volumes/Websites/typo3-6.2/htdocs/fileadmin/templates/layouts/main_layout.html",
+		"/Volumes/Websites/typo3-6.2/htdocs/fileadmin/templates/partials/footer.html",
+		"/Volumes/Websites/silex/test1/.htaccess",
+		"/Volumes/Websites/silex/test1/composer.json",
+		"/Volumes/Websites/typo3-6.2/htdocs/fileadmin/templates/main_1_column_without_menu.html",
+		"/Volumes/Websites/typo3-6.2/htdocs/fileadmin/templates/main_2_column_without_menu.html",
+		"/Volumes/Websites/silex/Silex-Twig-Example/app.php",
+		"/Volumes/Websites/silex/Silex-Twig-Example/views/index.html",
+		"/Volumes/Websites/silex/test1/views/todos/list.twig.html",
+		"/Volumes/Websites/typo3-7.5/htdocs/typo3/sysext/backend/Classes/Form/Container/FlexFormElementContainer.php",
+		"/Volumes/Websites/typo3-7.5/htdocs/typo3/sysext/backend/Classes/Form/Container/PaletteAndSingleContainer.php",
+		"/Volumes/Websites/typo3-7.5/htdocs/typo3/sysext/backend/Classes/Controller/BackendController.php",
+		"/Volumes/Websites/typo3-6.2/typo3_src-6.2.15/typo3/sysext/backend/Classes/Utility/BackendUtility.php",
+		"/Volumes/Websites/filehtmltest.html",
+		"/Volumes/Websites/typo3-7.5/htdocs/fileadmin/templates/main_template.html",
+		"/Volumes/Websites/typo3-7.5/htdocs/fileadmin/templates/main_1_column_with_menu.html",
+		"/Volumes/Websites/typo3-6.2/htdocs/typo3conf/ENABLE_INSTALL_TOOL",
+		"/Volumes/Websites/typo3-6.2/htdocs/FIRST_INSTALL",
+		"/Volumes/Websites/typo3-6.2/htdocs/fileadmin/templates/main_template.html",
+		"/Volumes/Websites/typo3-6.2/htdocs/fileadmin/templates/main_layout.html",
+		"/Volumes/Websites/typo3-7.5/typo3_src-7.5.0/typo3/sysext/backend/Resources/Public/JavaScript/saschahack.js",
+		"/Volumes/Websites/typo3-7.5/typo3_src-7.5.0/typo3/sysext/backend/Resources/Public/JavaScript/Modal.js",
+		"/Volumes/Websites/typo3-7.5/typo3_src-7.5.0/typo3/sysext/backend/Resources/Public/JavaScript/backend.js",
+		"/Volumes/Websites/typo3-7.5/typo3_src-7.5.0/typo3/sysext/backend/Resources/Public/JavaScript/modulemenu.js",
+		"/Volumes/Websites/typo3-7.5/typo3_src-7.5.0/typo3/sysext/backend/Resources/Public/JavaScript/iframepanel.js",
+		"/Volumes/Websites/typo3-7.5/typo3_src-7.5.0/typo3/sysext/backend/Resources/Public/JavaScript/Popover.js",
+		"/Volumes/Websites/typo3-7.5/typo3_src-7.5.0/typo3/sysext/backend/Resources/Public/JavaScript/ImageManipulation.js",
+		"/Volumes/Websites/typo3-7.5/typo3_src-7.5.0/typo3/sysext/backend/Resources/Public/JavaScript/Notification.js",
+		"/Volumes/Websites/typo3-7.5/htdocs/typo3/sysext/backend/Classes/Form/Element/AbstractFormElement.php",
+		"/Volumes/Websites/typo3-7.5/htdocs/FIRST_INSTALL",
+		"/Applications/MAMP/bin/php/php5.6.2/conf/php.ini",
+		"/Volumes/Websites/typo3-7.5/htdocs/typo3conf/realurl_autoconf.php",
+		"/Volumes/Websites/typo3/htdocs/FIRST_INSTALL",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/edbkn.styles.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/utility/_helpers.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/layouts/front/front-layout.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/layouts/contentpages/contentpages-layout.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/layouts/search/search-layout.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/layouts/projectpage/projectpage-layout.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/base-elements/_drupalMenu.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/js/edbkn.behaviors.js",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/templates/nodes/user-profile.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/templates/nodes/node--organisation.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/templates/nodes/node--project.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/base-elements/_fact.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/site-components/_encyclopedia.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/site-components/_project-overlay.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/base-elements/_textBlock.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/site-components/_publication-page.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/base/_base.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/base-elements/_logoBlock.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/base-elements/_linkList_no_span.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/templates/nodes/node--107.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/site-components/_guided-search.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/css/edbkn.styles.css",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/site-components/_slideshow.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/site-components/_site-footer.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/site-components/_site-header.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/templates/pages/views-view--designbuild-projects-page.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/site-components/_dragend-navigation-blocks.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/variables/_global.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/edbkn-form.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/site-components/_grid-settings.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/site-components/_drupal-site-navigation.scss",
+		"/private/var/folders/bb/zy40twyd4blckj7p1r632myc0000gn/T/fz3temp-1/edbkn.styles.css",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/_main.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/edbkn.styles.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/default/settings.php",
+		"/private/var/folders/bb/zy40twyd4blckj7p1r632myc0000gn/T/fz3temp-1/css_-Yt-0SJ5vp9O5so7o4zpWTSCV5QrTW6SKBb0fZaizzQ.css",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/base-elements/_vCard.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/base-elements/_hCard.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/base/_print-styles.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/utility/_functions.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/component/_site-navigation.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/block/_menu.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/abstractions/abstractions.md",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/css/edbkn.normalize.css",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/edbkn.hacks.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/edbkn.no-query.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/edbkn.normalize.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/base/README.md",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/base/_media.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/variables/README.md",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/.sass-cache/4e82c14188efc174453d717f3ea548eb9a35874c/main.scssc",
+		"/private/var/folders/bb/zy40twyd4blckj7p1r632myc0000gn/T/fz3temp-1/edbkn.behaviors.js",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/main.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/block/_drupalMenu.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/component/_drupal-site-navigation.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/component/_grid-settings.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/block/_vCard.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/block/_hCard.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/templates/nodes/original.node--organisation.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/layouts/front/node--920.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/layouts/front/node--view--news-view--block.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/templates/nodes/node--353.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/templates/nodes/node--event.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/templates/nodes/node--news.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/js/readMore.js",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/css/edbkn.hacks.css",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/layouts/front/node--card.tpl.php",
+		"/private/var/folders/bb/zy40twyd4blckj7p1r632myc0000gn/T/fz3temp-1/functions.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/js/dragend.js",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/block/_projectDoc.scss",
+		"/private/var/folders/bb/zy40twyd4blckj7p1r632myc0000gn/T/fz3temp-1/.htaccess 2",
+		"/private/var/folders/bb/zy40twyd4blckj7p1r632myc0000gn/T/fz3temp-1/.htaccess",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/js/min/dragend.min.js",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/_global.scss",
+		"/Volumes/Work/sites/edbkn.dev/modules/search/search.api.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/omega/omega/templates/search/search-result.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/modules/search/search-results.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/omega/omega/templates/search/search-results.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/edbkn.info",
+		"/private/var/folders/bb/zy40twyd4blckj7p1r632myc0000gn/T/fz3temp-1/edbkn.info",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/css/sascha/main.css",
+		"/Volumes/Work/settings.php",
+		"/Volumes/Work/sites/2014a.landwire.net/wp-config.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/block/_tagBlock.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/content/_plusImage.scss",
+		"/Volumes/Work/sites/edbkn.dev/modules/search/search-result.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/shiny/templates/page.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/shiny/scss/shiny.scss",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/shiny/scss/style.scss",
+		"/private/var/folders/bb/zy40twyd4blckj7p1r632myc0000gn/T/fz3temp-1/page.tpl.php",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/shiny/css/shiny.css",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/shiny/css/style.css",
+		"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn/sass/sascha/block/_linkList_no_span.scss"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/Websites/typo3-6.2",
+			"/Volumes/Websites/typo3-7.5/htdocs",
+			"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn",
+			"/Volumes/Work/sites/edbkn.dev/",
+			"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn",
+			"/Volumes/Work/sites/edbkn.dev/",
+			"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn",
+			"/Volumes/Work/sites/edbkn.dev/",
+			"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn",
+			"/Volumes/Work/sites/edbkn.dev/sites/all/",
+			"/Volumes/Work/sites/edbkn.dev/sites/all/themes/edbkn",
+			"<open-files>",
+			"/Volumes/Work/sites/edbkn.dev",
+			"/Volumes/Work/sites/",
+			"/Volumes/Work/sites/edbkn.dev",
+			"/Volumes/Work/sites/edbkn.git",
+			"/Volumes/Work/sites/edbkn/sites/all/themes/edbkn/",
+			"/Volumes/Work/sites/edbkn/sites/all/themes/edbkn/sass/sascha",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/themes/zash",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/plugins/buddypress",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/plugins/breadcrumb-trail",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/",
+			"/Volumes/Work/sites/2015.landwire.net/wp-content/",
+			"/Volumes/Work/sites/2015.landwire.net/wp-content/themes",
+			"/Volumes/Home/sascha/Downloads/breadcrumb-navxt",
+			"/Volumes/Work/sites/2015.landwire.net/wp-content/themes/",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/themes/zash",
+			"/Volumes/Work/sites/2014a.landwire.net",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/themes/zash",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/plugins/buddypress",
+			"/Volumes/Work/sites/niermann_new",
+			"/Volumes/Home/sascha/Downloads/master-slider-v2.7.2/masterslider,/Volumes/Work/sites/2014a.landwire.net/wp-content/plugins/royalslider_v3.2.2",
+			"/Volumes/Home/sascha/Downloads/master-slider-v2.7.2/masterslider",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/plugins/royalslider_v3.2.2",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/themes/twentyfourteen",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/themes/zash/sass",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/plugins/gravityforms",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content",
+			"/Volumes/Work/sites/2014a.landwire.net/wp-content/themes/zash/sass"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"t3-help-teaser",
+			"t3js-formengine-label",
+			"sascha",
+			"t3js-formengine-label",
+			"TYPO3/CMS/Backend/Notification",
+			"loadRequireJsModule",
+			"ClearCacheMenu",
+			"ClearCacheMenu.js",
+			"t3js-formengine-label",
+			"data-formengine-input-name",
+			"t3js-formengine-label",
+			"data-formengine-input-name",
+			"always_populate_raw_post_data",
+			"max_input",
+			"max_input_vars",
+			"always_populate_raw_post_data",
+			"Loaded Configuration File",
+			".mb20",
+			".mb0",
+			"search-results",
+			".page-node-107",
+			"our team",
+			"about us",
+			"meta-info",
+			" project index",
+			".grid-display",
+			".page-node-107",
+			"bg-header.png",
+			"Our team",
+			".page-node-107",
+			"page-node-107",
+			"SEED",
+			"about us",
+			"about",
+			"SEED",
+			"<a",
+			".search-active-results-counter",
+			"search-active-results-counter",
+			".search-active-results-counter",
+			"search-active-results-counter",
+			"strong",
+			".linkList",
+			"no-text-transform",
+			"l-main",
+			"edit-actions",
+			"field-type-datetime",
+			"Students",
+			"linkList--delimited",
+			"item-1",
+			"column1_3of3",
+			".item-1",
+			"textBlock",
+			"Students",
+			"facetapi",
+			"facetabi",
+			"component/",
+			"content/",
+			"block/",
+			".background-menu",
+			"project",
+			"ds-project-updates",
+			".search",
+			".search-active-item",
+			".l-region--slideshow",
+			"29px",
+			"l-logo",
+			"l-branding",
+			"background-menu",
+			"l-region l-region--navigation",
+			"background-menu",
+			"dragend",
+			".l-region--navigation",
+			"menu",
+			"text-orange",
+			"guided",
+			"hCard--nojs",
+			"textBlock",
+			"hCard--readmore",
+			"front--introduction",
+			"textBlock--js",
+			"textBlock--limited",
+			"textBlock--js",
+			"hCard--readMore",
+			"hCard--readmore",
+			"class=\"hCard hCard--border hCard--small clearfix \"",
+			"dragend",
+			"<!-- introducing a second title element to place on the image if necessary -->",
+			"hCard hCard--border hCard--small clearfix",
+			".last",
+			"click",
+			"dragend",
+			"vCard vCard--readmore clearfix ",
+			".dragen",
+			".front",
+			".dragend-navigation-blocks",
+			"dragend",
+			"transform:",
+			"transform(trans",
+			"transform",
+			"dragend-navigation-blocks mb20",
+			"dragend.min.js",
+			"dragend",
+			"search-active-results-counter",
+			".search-active-results-counter",
+			"<h2><?php print t('Search results');?></h2>",
+			"Search results",
+			".l-active-facets",
+			"l-search-content",
+			"h--border left-2of3",
+			"stakeholder",
+			"hCard--hidden",
+			".left-2of3",
+			"wasser",
+			".left-2of3",
+			"front--introduction",
+			".l-logo",
+			".beta-desc",
+			"edbkn.hacks.scss",
+			"search-result__snippet",
+			"lass=\"search-results\">",
+			"lass=\"search-result\">",
+			"search-result",
+			"$x-small",
+			"class=\"vCard__body fact clearfix\"",
+			"l-region--slideshow",
+			"l-region l-region--slideshow",
+			".l-region--active-facets ",
+			"node--detail-left mb20"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"site-components/",
+			"content-elements/",
+			"base-elements/",
+			"textBlock--readmore",
+			"textBlock--limited",
+			"h--border",
+			"fact-text",
+			"extern arrow",
+			"intern arrow",
+			"extern arrow",
+			"intern arrow",
+			"fact",
+			"",
+			"selectValue",
+			"editButton",
+			"state__empty",
+			"displayBlock",
+			"block__display"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 112.0
+	},
+	"pinned_build_system": "",
+	"project": "silex.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

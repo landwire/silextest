@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <h1>My Todo List</h1>
+        <ul id="todolist">
+            {% for item in todos %}
+                <li>{{ item.title }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

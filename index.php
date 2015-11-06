@@ -2,6 +2,7 @@
 // web/index.php
 require_once __DIR__.'/vendor/autoload.php';
 require_once __DIR__.'/helpers/helpers.php';
+require_once __DIR__.'/classes/todos.php';
 
 // make a storage directory and file if non exists
 // create new directory with 744 permissions if it does not exist yet

@@ -28,7 +28,6 @@ $app->get('/twig', function () use ($app) {
 
 // Processing the form
 $app->post('/twig', function (Request $request) use ($app) {
-    $todos = json_decode(file_get_contents('data/todos.json'), true);
     $form = sas_loadForm('Todo', $data, $app);
     //var_dump($form) . '<br>';
     
@@ -36,29 +35,20 @@ $app->post('/twig', function (Request $request) use ($app) {
 
     if ($form->isValid()) {
         $data = $form->getData();
-        // calculate new ID
-        $ids = array();
-        foreach ($todos as $todo) {
-        	$ids[] = $todo['id'];
-        }
-        if (empty($todos)) {
-        	$new_id = 1;
+        
+        // create new todo
+        $todos = Todos::create_todo($data);
+
+        // save todos
+        $is_saved = Todos::save_todos($todos);
+        
+        if ($is_saved) {
+            // redirect somewhere
+            return $app->redirect('twig');
         }
         else {
-        	$new_id = max($ids)+1;
+            return 'error';
         }
-
-        $todos[] = array(
-        				'id'	=> $new_id,
-        				'title' => $data['Title'],
-        				'body' 	=> $data['Body'],
-        				'done' 	=> false,
-        			);
-        
-        // save todos in a file
-	    file_put_contents("data/todos.json",json_encode($todos));
-        // redirect somewhere
-        return $app->redirect('twig');
     }
    
     // form must be created after submission handlers and validation!!!!
@@ -74,25 +64,48 @@ $app->post('/twig', function (Request $request) use ($app) {
 
 // deleting a Todo
 $app->post('/todo/delete', function (Request $request) use ($app) {
-	$todos = json_decode(file_get_contents('data/todos.json'), true);
+	$todos = Todos::get_todos();
 	$id = intval($request->request->get('id'));
-	//var_dump($todos);
-	foreach ($todos as $todo) {
-		if ($todo['id'] === $id) {
-			$todos = removeElementWithValue($todos, 'id', $id);
-			file_put_contents("data/todos.json",json_encode($todos));
-			return new Response('Todo deleted.', 201);
-		}
+	
+    // delete todo returns new array of todos
+    $todos = Todos::delete_todo($id);
+
+    // save todos
+    $is_saved = Todos::save_todos($todos);
+	
+    if ($is_saved) {
+		return new Response('Todo deleted.', 201);
 	}
-	return 'error';
+    else {
+        return 'error';
+	}
+});
+
+// deleting a Todo
+/*
+$app->post('/todo/delete', function (Request $request) use ($app) {
+    $todos = json_decode(file_get_contents('data/todos.json'), true);
+    $id = intval($request->request->get('id'));
+    //var_dump($todos);
+    foreach ($todos as $todo) {
+        if ($todo['id'] === $id) {
+            $todos = removeElementWithValue($todos, 'id', $id);
+            file_put_contents("data/todos.json",json_encode($todos));
+            return new Response('Todo deleted.', 201);
+        }
+    }
+    return 'error';
 });
 
 // marking Todo as done
 $app->post('/todo/done', function (Request $request) use ($app) {
-	$todos = json_decode(file_get_contents('data/todos.json'), true);
+	//$todos = json_decode(file_get_contents('data/todos.json'), true);
 	$id = intval($request->request->get('id'));
 	$done = strToBool($request->request->get('done'));
 	//var_dump($todos);
+    $todo = Todos::get_todo($id);
+    $fields = array ()
+    $todo = Todos::update_todo($id, $fields);
 	foreach ($todos as &$todo) {
 		if ($todo['id'] === $id) {
 			$todo['done'] = $done;
@@ -101,6 +114,22 @@ $app->post('/todo/done', function (Request $request) use ($app) {
 		}
 	}
 	return 'error';
+});
+*/
+// marking Todo as done
+$app->post('/todo/done', function (Request $request) use ($app) {
+    $todos = json_decode(file_get_contents('data/todos.json'), true);
+    $id = intval($request->request->get('id'));
+    $done = strToBool($request->request->get('done'));
+    //var_dump($todos);
+    foreach ($todos as &$todo) {
+        if ($todo['id'] === $id) {
+            $todo['done'] = $done;
+            file_put_contents("data/todos.json",json_encode($todos));
+            return new Response('Todo is done. One task less on the list!', 201);
+        }
+    }
+    return 'error';
 });
 
 // sorting the todos

@@ -26,7 +26,7 @@ $app->get('/todo', function () use ($app) {
     $todos = Todos::get_todos();
 
     // render the app
-    return $app['twig']->render('index.twig', array(
+    return $app['twig']->render('base.twig', array(
             'form' => $form,
             'todos'=> $todos
     ));
@@ -62,7 +62,7 @@ $app->post('/todo', function (Request $request) use ($app) {
         $form = $form->createView();
     }
 
-    return $app['twig']->render('index.twig', array(
+    return $app['twig']->render('base.twig', array(
             'form' => $form,
             'todos'=> $todos
     ));
@@ -135,7 +135,7 @@ $app->get('/todo/edit/{id}', function ($id) use ($app) {
     // get todos to pass to the app fro rendering
     $todos = Todos::get_todos();
 
-    return $app['twig']->render('index2.twig', array(
+    return $app['twig']->render('edit.twig', array(
             'form' => $form,
             'todos'=> $todos
     ));
@@ -181,7 +181,7 @@ $app->post('/todo/edit/{id}', function (Request $request, $id) use ($app) {
     // get todos to pass to the app fro rendering
     $todos = Todos::get_todos();
 
-    return $app['twig']->render('index.twig', array(
+    return $app['twig']->render('edit.twig', array(
             'form' => $form,
             'todos'=> $todos
     ));

@@ -39,8 +39,8 @@ class Todos {
         // create the new todo
         $todos[] = array(
         				'id'	=> $new_id,
-        				'title' => $data['Title'],
-        				'body' 	=> $data['Body'],
+        				'title' => $data['title'],
+        				'body' 	=> $data['body'],
         				'done' 	=> false,
         			);
 
@@ -58,22 +58,42 @@ class Todos {
 		return false;
 	}
 
-	function update_todo($id, $props) {
-		$todo = self::get_todo($id);
-		foreach ($props as $prop) {
+	function update_todo($id, $data) {
+		$todos = self::get_todos();
 
-			if ($todo['id'] === $id) {
-				$todo['done'] = $done;
-				file_put_contents("data/todos.json",json_encode($todos));
-				return new Response('Todo is done. One task less on the list!', 201);
-			}
-		}
+		foreach ($todos as &$todo) {
+	        if ($todo['id'] === $id) {
+	        	$todo = array_replace($todo, $data);
+	        	break;
+	        }
+	    }
+
+	    return self::save_todos($todos);
 	}
 
 	function delete_todo($id) {
 		$todos = self::get_todos();
 		$todos = removeElementWithValue($todos, 'id', $id);
-		return $todos;
+		
+		return self::save_todos($todos);
 	}
 
+	function sort_todos($order) {
+		$todos = self::get_todos();
+		//$order = $request->request->get('order');
+		$newtodos = array();
+		//var_dump($order);
+		// sort $todos according to $order
+		foreach ($order as $id) {
+		    foreach ($todos as $todo) {
+		        if ($todo['id'] == $id) {
+		            $newtodos[] = $todo;
+		            break;
+		        }
+		    }
+		}
+		
+		return self::save_todos($newtodos);
+		
+	}
 }

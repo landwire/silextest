@@ -39,3 +39,6 @@ a {
 #form {
 	margin-bottom: 20px;
 }
+.todo__edit .todo__form {
+	display: block;
+}

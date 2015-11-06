@@ -77,7 +77,7 @@ console.log('Sascha');
             });
         });*/
 
-    	// todo expand handler
+    	// todo item expand handler
     	$('.list-group-item').on('click', function() {
     		$(this).find('.todo__body').slideToggle();
     	});
@@ -90,6 +90,7 @@ console.log('Sascha');
         // sortable
         $( "#todolist" ).sortable({
             update: function( event, ui ) {
+                event.stopPropagation();
                 console.log(event.target);
                 var ids = [];
                 $(event.target).find('.todo__item').each(function() {

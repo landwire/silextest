@@ -90,6 +90,7 @@ console.log('Sascha');
         // sortable
         $( "#todolist" ).sortable({
             update: function( event, ui ) {
+                event.stopPropagation();
                 console.log(event.target);
                 var ids = [];
                 $(event.target).find('.todo__item').each(function() {

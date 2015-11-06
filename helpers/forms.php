@@ -20,7 +20,8 @@ function sas_loadForm($formName, $data, Silex\Application $app) {
                 ->add('Body', 'textarea',
                 	array(
 				        'attr' => 	array(
-				                		'class' => 'form-control'
+				                		'class' => 'form-control',
+                                        'rows'  => 5
 				                	),
 				        'constraints' => array(
 				        	new Assert\NotBlank(),

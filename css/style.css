@@ -33,3 +33,9 @@ body {
 a {
 	color: black;
 }
+.form-control {
+	margin-bottom: 15px;
+}
+#form {
+	margin-bottom: 20px;
+}

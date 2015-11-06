@@ -42,3 +42,67 @@ a {
 .todo__edit .todo__form {
 	display: block;
 }
+.todo__title {
+	line-height: 1.3;
+	width: 60%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media screen and (min-width: 600px) {
+	.todo__title {
+    	width: 80%;
+	}
+}
+.expanded .todo__title {
+	white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+}
+.todo__body {
+	margin-top: 10px;
+}
+.todo--done {
+	opacity: .8;
+    color: rgba(0,150,60,.3);
+}
+
+#todolist {
+	margin-top: 20px;
+}
+
+/* notify styles */
+[data-notify="progressbar"] {
+	margin-bottom: 0px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 5px;
+}
+[data-notify="container"] {
+	width: 250px;
+}
+
+.alert-minimalist {
+	background-color: rgb(241, 242, 240);
+	border-color: rgba(149, 149, 149, 0.3);
+	border-radius: 3px;
+	color: rgb(149, 149, 149);
+	padding: 10px;
+}
+.alert-minimalist > [data-notify="icon"] {
+	height: 50px;
+	margin-right: 12px;
+}
+.alert-minimalist > [data-notify="title"] {
+	color: rgb(51, 51, 51);
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.alert-minimalist > [data-notify="message"] {
+	font-size: 80%;
+}
+

@@ -18,6 +18,7 @@
         
         <link rel="stylesheet" href="/css/style.css">
         <script src="/js/script.js"></script>
+        <script src="/js/vendor/bootstrap-notify.min.js"></script>
         <title>Todo-App</title>
     </head>
     <body class="{% block bodyClasses %}todo__home{% endblock %}">
@@ -39,11 +40,12 @@
                     {% include 'components/form.twig' %}
                 </div>
                 {% endblock %}
+                {% block todoList %}
                 <div class="todolist-container">
                     <h3>List of Todo Items</h3>
                     <ul id="todolist" class="list-group">
                         {% for item in todos %}
-                            <li class="todo_{{ item.id }} todo__item list-group-item" data-id="{{ item.id }}">
+                            <li class="todo_{{ item.id }} todo__item list-group-item {% if item.done %}todo--done{% endif %}" data-id="{{ item.id }}">
                                 <h5 class="item_container list-group-item-heading">
                                     <span class="todo__title ">{{ item.title }}</span>
                                     <span class="item__controls pull-right">
@@ -62,6 +64,7 @@
                         {% endfor %}
                     </ul>
                 </div>
+                {% endblock %}
             </div>
             <div id="footer">
         		{% include 'footer/footer.twig' %}

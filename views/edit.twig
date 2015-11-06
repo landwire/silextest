@@ -1,8 +1,10 @@
-{% extends "index.twig" %}
+{% extends "base.twig" %}
 {% block bodyClasses %}todo__edit{% endblock %}
 {% block contentHead %}
 	<h1>Update Todo</h1>
 	<div class="todo__controls">
-	    <a class="todo__list btn btn-default" href="/twig">List Todo Items</a>
+	    <a class="todo__list btn btn-default" href="/todo">List Todo Items</a>
 	</div>
+{% endblock %}
+{% block todoList %}
 {% endblock %}
